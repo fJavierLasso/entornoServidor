@@ -4,6 +4,7 @@
 <head>
     <title>Ejercicios JL</title>
     <link rel="stylesheet" href="./estilosEjercicios3.css">
+    <meta http-equiv="refresh" content=".5">
 </head>
 <body>
 
@@ -49,7 +50,7 @@ de la circunferencia. NOTA: Utiliza un fichero css para dar estilo a cada parte.
 $nombre = "Pepito";
 $r = 50;
 $pi = 3.14;
-echo $r*2*$pi;
+echo pow($r,2)*M_PI;
 ?>
 </div>
 
