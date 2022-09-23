@@ -4,7 +4,7 @@
 <head>
     <title>Ejercicios JL</title>
     <link rel="stylesheet" href="./estilosEjercicios3.css">
-    <meta http-equiv="refresh" content=".5">
+    <meta http-equiv="refresh" content="30">
 </head>
 <body>
 
@@ -94,10 +94,16 @@ y un asterisco en el centro. NOTA2: Utiliza la siguiente función php para pinta
 debes sobrescribir la propiedad background-color del elemento html a través de la etiqueta style. -->
 
 <?php for($i=0;$i<$piramideSize;$i++){ ?>
-    <span style="background-color: rgb(<?php echo(rand(1,300) . "," . rand(1,300) . "," . rand(1,300)) ?>);">
+    <span style="
+        color: rgb(<?php echo(rand(1,100) . "," . rand(1,100) . "," . rand(1,100)) ?>);
+        background-color: rgb(<?php echo(rand(1,300) . "," . rand(1,300) . "," . rand(1,300)) ?>);
+        font-size: 80px;
+        ">
         <?php
           for($z=0;$z<$i;$z++){
-            echo "*";
+            echo "
+            *
+            ";
         }
         echo "<br>";
     }

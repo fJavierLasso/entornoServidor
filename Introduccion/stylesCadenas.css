@@ -1,0 +1,139 @@
+html {
+    padding: none;
+    margin: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 4vw;
+    padding: 5%;
+}
+
+form {
+    height: 6vw;
+
+}
+h1 {
+    font-size: 4vw;
+    margin-right: 2%;
+}
+
+hr {
+    border-top: 12px dotted rgb(166, 166, 166);
+    border-bottom: none;
+    width: 9%;
+}
+
+.tarjeta {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.tarjetaVacia {
+    display: none;
+}
+
+.tarjetaInterior {
+    width: 45%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 5%;
+    z-index: 1;
+}
+
+.contadoresNumericos {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.contador {
+    width: 40%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin: 2%;
+}
+
+.contador__circulo {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(217, 217, 217);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    /* alineo vertical */
+    align-items: center; 
+    /* alineo horizontal */
+    justify-content: center;
+}
+
+
+.tipoPalabra {
+    border-radius: 15px;
+    padding: 5%;
+    z-index: 2;
+
+    animation-name: aparece;
+    animation-duration: 2s;
+    
+}
+
+@keyframes aparece {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#esPalíndromo {
+    background-color: rgba(0, 218, 44, 0.568);
+}
+
+#noPalíndromo {
+    background-color: rgba(218, 0, 0, 0.568);
+}
+
+.firma {
+    color: rgb(216, 216, 216);
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -.5%;
+}
+
+@media (max-width: 768px) {
+    .tarjeta {
+        flex-direction: column;
+        height: 30%;
+    }
+
+    .tarjetaInterior {
+        width: 86%;
+    }
+
+    form {
+        width: 91%;
+        height: auto;
+    }
+}
