@@ -12,27 +12,27 @@ if(isset($_GET['introducido']) && $_GET['introducido'] != "") {
 
 function contarVocales($palabra){
 
-    $vocales = "aeiouAEIOU";
+    $vocales = "aeiouAEIOUáéíóú";
     $voc = 0;
 
-    for($i=0;$i<strlen($palabra);$i++) {
-        for($j=0;$j<strlen($vocales);$j++) {
+    for($i=0;$i<mb_strlen($palabra);$i++) {
+        for($j=0;$j<mb_strlen($vocales);$j++) {
             if($palabra[$i]==$vocales[$j]){
                 $voc++;
             } 
         }
     }
 
-    $con = strlen($palabra) - $voc;
+    $con = mb_strlen($palabra) - $voc;
     return array($voc,$con);
 }
 
 function esPalindromo($palabra){
 
-    $chequeos = (integer)strlen($palabra)/2;
+    $chequeos = (integer)mb_strlen($palabra)/2;
     $esPal = true;
     for ($i=0;$i<$chequeos;$i++){
-        if ($palabra[$i]!=$palabra[strlen($palabra)-$i-1]){
+        if ($palabra[$i]!=$palabra[mb_strlen($palabra)-$i-1]){
             $esPal = false;
         } 
     }

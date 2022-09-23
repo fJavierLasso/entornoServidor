@@ -9,7 +9,7 @@ body {
 input {
     border-radius: 15px;
     border: none;
-    width: 100%;
+    width: 95%;
     height: 100%;
     font-size: 4vw;
     padding: 5%;
@@ -133,7 +133,6 @@ hr {
     }
 
     form {
-        width: 91%;
         height: auto;
     }
 }
