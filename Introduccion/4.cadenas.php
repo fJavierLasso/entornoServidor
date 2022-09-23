@@ -52,7 +52,7 @@ function esPalindromo($palabra){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesCadenas.css">
+    <link rel="stylesheet" href="4.stylesCadenas.css">
     <title>Ejercicio 4</title>
 </head>
 <body>
@@ -61,7 +61,7 @@ function esPalindromo($palabra){
 
         </div>
         <h1>Analizar palabra:</h1>
-        <form action="4.ejercicioCadenas.php" method="get">
+        <form action="4.cadenas.php" method="get">
             <input type="text" name="introducido" value="<?=$valor?>">
         </form>
     </div>

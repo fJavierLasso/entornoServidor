@@ -3,7 +3,7 @@
 
 <head>
     <title>Ejercicios JL</title>
-    <link rel="stylesheet" href="./estilosEjercicios3.css">
+    <link rel="stylesheet" href="./3.stylesEjercicios.css">
     <meta http-equiv="refresh" content="30">
 </head>
 <body>

@@ -17,6 +17,7 @@ input {
 
 form {
     height: 6vw;
+    width: 45vw;
 
 }
 h1 {
@@ -90,7 +91,6 @@ hr {
 .tipoPalabra {
     border-radius: 15px;
     padding: 5%;
-    z-index: 2;
 
     animation-name: aparece;
     animation-duration: 2s;
@@ -132,7 +132,14 @@ hr {
         width: 86%;
     }
 
+    .tipoPalabra {
+        margin-top: -10%;
+    }
+
     form {
         height: auto;
+        width:79vw;
     }
+
+
 }
