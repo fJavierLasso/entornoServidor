@@ -35,9 +35,9 @@ $cantidadColumnas = 10;
             </tr>
         
          <?php
-            for($i = 0; $i<$cantidadColumnas;$i++) {
+            for($i = 1; $i<$cantidadColumnas+1;$i++) {
          ?>
-            <tr style="background-color:#31E1F<?=$i?>">
+            <tr style="background-color:#31E1F9">
         	    <td><?php echo "$tablaElegida * $i"?></td>
         	    <td><?php echo $tablaElegida*$i?></td>
             </tr>
