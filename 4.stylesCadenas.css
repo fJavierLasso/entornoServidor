@@ -90,8 +90,7 @@ hr {
 
 .tipoPalabra {
     border-radius: 15px;
-    padding: 5%;
-
+    padding: 20px;
     animation-name: aparece;
     animation-duration: 2s;
     

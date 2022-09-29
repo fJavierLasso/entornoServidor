@@ -1,0 +1,58 @@
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border-radius: 15px;
+    border: 2px solid;
+    height: 25px;
+    width: 160px;
+    padding-left:10px;
+}
+
+h1 {
+    margin-top:200px;
+    margin-bottom: -5px;
+}
+form {
+    width: 500px;
+}
+
+.todo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.fecha {
+    margin-left: 1px;
+    height:28px;
+}
+
+.sector {
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom:40px;
+}
+
+.generar{
+    margin:3%;
+    font-weight: bold;
+    font-size: large;
+    width: auto;
+    height: 35px;
+}
+
+.generar:hover {
+    background-color: white;
+    cursor: pointer;
+}
