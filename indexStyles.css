@@ -10,6 +10,8 @@ body {
 ul {
     width: 25%;
     list-style: none;
+    position: relative;
+    left: -1.5%;
 }
 li {
     background-color: aliceblue;
