@@ -1,6 +1,6 @@
 <?php 
-     $dir = './ejercicios';
-     function directory($dir){
+     function directory() {
+            $dir = './ejercicios';
             $files = scandir($dir);
 
             echo "<ul>";
@@ -28,7 +28,7 @@
          <main>
              <div class="list">
                  <?php 
-                     directory($dir);
+                     directory();
                  ?>
              </div>
          </main>
