@@ -1,20 +1,17 @@
 <?php 
-     $dir = '.';
+     $dir = './ejercicios';
      function directory($dir){
-         $files = array_diff(scandir($dir),array('.','..','index.php','css'));
- ?>
-     <ul>
-         <?php 
-             foreach($files as $file) {
-                  if (preg_match("/.php\b/",$file)){
-                     echo "<a href=".$dir."/".$file."><li>".$file."</li></a>";
-                 }
-             }
-         ?>
-     </ul>
+            $files = scandir($dir);
 
- <?php } ?>
-
+            echo "<ul>";
+                foreach($files as $file) {
+                    if (preg_match("/.php\b/",$file)){
+                        echo "<a href=".$dir."/".$file."><li>".$file."</li></a>";
+                    }
+                }
+            echo "<ul>";
+        }
+?>
  <!DOCTYPE html>
  <html lang="es">
  <head>
