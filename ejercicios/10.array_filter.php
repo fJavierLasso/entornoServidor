@@ -7,14 +7,29 @@ $personas = [
     ["Amparo",0]
 ];
 
-function chequeaGenero($arrayPersonas) {
-    return ($arrayPersonas[1] ? "Señor" : "Señora") . " " . $arrayPersonas[0];
+//Ejercicio 10:
 
+$mujeres = array_filter($personas,function($val){
+    return $val[1]==0;
+});
+
+$hombres = array_filter($personas,function($val){
+    return $val[1]==1;
+});
+
+function imprimir($array){
+    foreach ($array as $valor) {
+        echo $valor[0]." ";
+    }
+    echo "<br>";
 }
 
-$resultado = array_map("chequeaGenero",$personas);
+imprimir($mujeres);
+imprimir($hombres);
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,8 +39,6 @@ $resultado = array_map("chequeaGenero",$personas);
     <title>Document</title>
 </head>
 <body>
-    <?php
-    print_r($resultado);
-    ?>
+    
 </body>
 </html>
