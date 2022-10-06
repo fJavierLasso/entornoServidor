@@ -24,7 +24,9 @@ $resultado = array_map(function($arrayPersonas){
 </head>
 <body>
     <?php
-    print_r($resultado);
+    array_walk($resultado,function($elemento,$clave){
+        echo $elemento . "<br>";
+    });
     ?>
 </body>
 </html>
