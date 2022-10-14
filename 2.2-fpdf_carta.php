@@ -7,21 +7,14 @@ $representante = "";
 $fecha = "";
 $valoresIterable=array('nombre','empresa','representante','fecha');
 $valores=array($nombre,$empresa,$representante,$fecha);
+$imprimirPDF = true;
 
 //Compruebo que todo esté escrito, guardo valores
 for($i=0;$i<count($valoresIterable);$i++){
 
-    if(isset($_GET[$valoresIterable[$i]])){
+    if(isset($_GET[$valoresIterable[$i]]) && $_GET[$valoresIterable[$i]]!=""){
         $valores[$i] = $_GET[$valoresIterable[$i]];
-    }
-}
-
-//Bool si el usuario ha rellenado todos los campos
-$imprimirPDF = true;
-
-for($i=0;$i<count($valores);$i++){
-
-    if($valores[$i]=="") {
+    } else {
         $imprimirPDF = false;
     }
 }
@@ -70,14 +63,14 @@ Atentamente,
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="5.stylesCarta.css">
+    <link rel="stylesheet" href="2.2-stylesCarta.css">
     <title>Ejercicio 5</title>
 </head>
 <body>
     <h1>Carta de Recomendación</h1>
     
    <div class="todo">
-     <form action="5.cartaPresentacion.php" method="get">
+     <form action="2.2-fpdf_carta.php" method="get">
         <div class="formulario">
             <div class="sector">
                 <div class="botones">

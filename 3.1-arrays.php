@@ -77,7 +77,7 @@ function crearHorario($var){
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="6.stylesArrays.css">
+        <link rel="stylesheet" href="3.1-stylesArrays.css">
         <title>EJERCICIO 6</title>
     </head>
     <body>

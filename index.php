@@ -1,6 +1,5 @@
 <?php 
-     function directory() {
-            $dir = './ejercicios';
+     function directory($dir) {
             $files = scandir($dir);
             sort($files,SORT_NUMERIC);
             echo "<ul class='list-group'>";
@@ -35,7 +34,7 @@
          <main>
              <div class="list">
                  <?php 
-                     directory();
+                     directory(".");
                  ?>
              </div>
          </main>
