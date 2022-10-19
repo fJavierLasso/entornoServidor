@@ -54,10 +54,10 @@ function navigate()
     <title>Inicio</title>
 </head>
 
-<body>
+<body class="">
     <header>
-        <h1 class="h1 m-3">Entorno Servidor</h1>
-        <hr>
+        <h1 class="h1 m-3 p-3 ">Entorno Servidor</h1>
+        <hr class="m-3">
     </header>
     <div class="d-flex flex-wrap justify-content-center">
         <?php
