@@ -8,18 +8,18 @@ function navigate()
         if (is_dir($dir) && strlen($dir) > 4) {
             $subDir = scandir($dir);
 ?>
-            <div class="dropdown seccion">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <?= $dir ?>
                 </button>
-                <div class="dropdown-menu desplegable" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <?php
                     foreach ($subDir as $d) {
-                        if (str_ends_with($d,".php")):
+                        if (str_ends_with($d, ".php")) :
                     ?>
-                        <a class="dropdown-item" href="<?=$dir."/".$d?>"><?= $d ?></a>
+                            <a class="dropdown-item" href="<?= $dir . "/" . $d ?>"><?= $d ?></a>
                     <?php
-                    endif;
+                        endif;
                     }
                     ?>
                 </div>
@@ -35,37 +35,36 @@ function navigate()
 <html lang="es">
 
 <head>
- <!-- Latest compiled and minified CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="indexStyles.css">
 </head>
 
 <body>
     <header>
-        <h1>Entorno Servidor</h1>
+        <h1 class="h1 m-3">Entorno Servidor</h1>
         <hr>
     </header>
-    <div class="contenido">
-    <?php
+    <div class="d-flex flex-wrap justify-content-center">
+        <?php
         navigate();
         ?>
     </div>
-       
+
 </body>
 
 </html>
