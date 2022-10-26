@@ -3,13 +3,14 @@
 class Usuario {
 
     private static $niveles = [0,1,2,3,4,5,6];
-    private $nivel;
+   
     private $seguidas = 0;
-    protected $paraSubir;
+    protected $paraSubir; //objetivo para subir
 
     protected $nombre;
     private $apellidos;
     private $deporte;
+    private $nivel;
     private $partidos = [];
 
 
