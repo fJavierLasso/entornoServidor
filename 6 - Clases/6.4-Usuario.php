@@ -1,5 +1,7 @@
 <?php
 
+define("LONG_RACHA_CAMBIO_USUARIO", 6); //recomendado por Jorge para legibilidad de cambios en el futuro.
+
 class Usuario {
 
     private static $niveles = [0,1,2,3,4,5,6];
@@ -21,7 +23,7 @@ class Usuario {
         $this->deporte = $dep;
         $this->nivel = self::$niveles[0];
 
-        $this->paraSubir = 6;
+        $this->paraSubir = LONG_RACHA_CAMBIO_USUARIO;
 
         echo ("<br><h3>Usuario $this->nombre creado.</h3><br><br>");
     }  
