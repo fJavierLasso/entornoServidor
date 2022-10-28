@@ -1,7 +1,7 @@
 <?php
-require_once('7.2.1-BancoMalvado.php');
-require_once('7.2.3-BitCoinConan.php');
-require_once('7.2.4-BancoMaloMalisimo.php');
+require_once('8.1-BancoMalvado.php');
+require_once('8.2-BitCoinConan.php');
+require_once('8.3-BancoMaloMalisimo.php');
 
 $bancos = [
     $banco1 = new BancoMalvado(),

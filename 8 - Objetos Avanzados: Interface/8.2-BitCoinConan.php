@@ -1,5 +1,5 @@
 <?php
-require_once('7.2-iPlataformaPago.php');
+require_once('8-iPlataformaPago.php');
 
 class BitCoinConan implements PlataformaPago{
 
