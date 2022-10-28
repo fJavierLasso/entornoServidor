@@ -1,7 +1,9 @@
 <?php
 
 namespace Personajes;
-abstract class Mago implements \Common\iPersonaje {
+use \Common\iPersonaje;
+
+abstract class Mago implements iPersonaje {
 
     use \Common\tSpawnable;
     

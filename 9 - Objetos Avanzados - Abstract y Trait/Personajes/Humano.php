@@ -2,8 +2,9 @@
 
 
 namespace Personajes;
+use \Common\iPersonaje;
 
-class Humano implements \Common\iPersonaje {
+class Humano implements iPersonaje {
 
     use \Common\tSpawnable;
     
