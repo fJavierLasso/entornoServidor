@@ -1,5 +1,6 @@
 <?php
 
+namespace Common;
  interface iPersonaje {
 
 public function atacar();

@@ -1,10 +1,9 @@
 <?php
 
-require_once ("iPersonaje.php");
+namespace Personajes;
+abstract class Mago implements \Common\iPersonaje {
 
-abstract class Mago implements iPersonaje {
-
-    use tSpawnable;
+    use \Common\tSpawnable;
     
     public function defender(){
         echo "<br>hechizo protector";

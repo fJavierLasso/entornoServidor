@@ -1,8 +1,10 @@
 <?php
 
+namespace Objetos;
+
 class Edificio {
     
-    use tSpawnable;
+    use \Common\tSpawnable;
     public $altura;
 
     /**

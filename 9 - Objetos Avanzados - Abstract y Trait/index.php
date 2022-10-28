@@ -1,28 +1,25 @@
 <?php
 
 //NO FUNCIONA
-// spl_autoload_register(function ($class) {
-//     $classPath = "./";
-//     require("./" . $class . ".php");
-// });
 
-require_once ("Personajes/Humano.php");
-require_once ("Personajes/MagoBlanco.php");
-require_once ("Personajes/MagoOscuro.php");
-require_once ("Objetos/Edificio.php");
-require_once ("Objetos/objeto.php");
+spl_autoload_register(function ($class) {
+    $classPath = realpath("./");
+    $file = str_replace('\\','/', $class);
+    $include = "$classPath/${file}.php";
+    require($include);
+});
 
 $chars = [
-    $char1 = new Humano(),
-    $char2 = new MagoBlanco(),
-    $char3 = new MagoOscuro()
+    $char1 = new Personajes\Humano(),
+    $char2 = new Personajes\MagoBlanco(),
+    $char3 = new Personajes\MagoOscuro()
 ];
 
 $char2->setNombre("Harry Potter");
 $char2->setDescripcion("Un mago estúpido que rompió y tiró la varita de Dumbledore");
 $char3->setNombre("Voldemort");
 
-$torre = new Edificio();
+$torre = new Objetos\Edificio();
 $torre->setAltura(150); //cosa liosa: Cómo accedo a todas las propiedades de una clase si están esparcidas por interfaces, traits..?
 $torre->setNombre("torreDura");
 

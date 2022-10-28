@@ -1,5 +1,7 @@
 <?php
 
+namespace Common;
+
 trait tSpawnable {
 
     public $nombre;

@@ -1,6 +1,6 @@
 <?php
 
-require_once ("Mago.php");
+namespace Personajes;
 
 class MagoOscuro extends Mago {
     public function atacar()

@@ -1,8 +1,10 @@
 <?php
 
+namespace Objetos;
+
 class Objeto {
     
-    use tSpawnable;
+    use \Common\tSpawnable;
     public $peso;
 
     /**
