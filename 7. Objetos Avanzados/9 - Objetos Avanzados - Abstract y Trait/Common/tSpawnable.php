@@ -1,7 +1,7 @@
 <?php
 
 namespace Common;
-
+//Los traits son para implementar métodos etc. en varias clases que no tienen nada que ver (Sin herencia)
 trait tSpawnable {
 
     public $nombre;

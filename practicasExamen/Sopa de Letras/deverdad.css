@@ -1,0 +1,12 @@
+body {
+    color: rgb(233, 233, 233);
+    background-color: rgb(45, 45, 45);
+}
+table {
+    border: 5px solid;
+    border-style: double;
+}
+
+td {
+    text-align: center;
+}
